@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.min.css?v=cf8483f0" />
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script defer="" src="../../_static/app.umd.js?v=96350458"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -166,6 +166,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../projects/ad559xr_console/ad559xr_console.html">AD559XR Console Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projects/ad590_console/ad590_console.html">AD590 Console Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projects/adt7420_console/adt7420_console.html">ADT7420 Console Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projects/ltc2672_iio/ltc2672_iio.html">LTC2672 IIO Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projects/nanodac_console/nanodac_console.html">nanoDAC+ Console Application</a></li>
 </ul>
 </li>
@@ -183,31 +184,33 @@ Content on this topic
           <div class="body" role="main">
             
   <section id="iio-oscilloscope">
-<h1>IIO Oscilloscope<a class="headerlink" href="#iio-oscilloscope" title="Link to this heading">#</a></h1>
+<h1>IIO Oscilloscope<a class="headerlink" href="#iio-oscilloscope" title="Link to this heading">¶</a></h1>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
 <p>Refer this page to install IIO oscilloscope for Windows or Linux OS: <a class="reference external" href="https://github.com/analogdevicesinc/iio-oscilloscope/releases">IIO Oscilloscope (Client)</a></p>
 </section>
 <section id="running-on-linux">
-<h2>Running on Linux<a class="headerlink" href="#running-on-linux" title="Link to this heading">#</a></h2>
+<h2>Running on Linux<a class="headerlink" href="#running-on-linux" title="Link to this heading">¶</a></h2>
 <p>Refer this page: <a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/iio_oscilloscope">https://wiki.analog.com/resources/tools-software/linux-software/iio_oscilloscope</a></p>
 </section>
 <section id="running-on-windows">
-<h2>Running on Windows<a class="headerlink" href="#running-on-windows" title="Link to this heading">#</a></h2>
+<h2>Running on Windows<a class="headerlink" href="#running-on-windows" title="Link to this heading">¶</a></h2>
 <p>Open the IIO Oscilloscope application from start menu and configure the serial (UART)
 settings as shown below. Click on refresh button and device should pop-up
 in the IIO devices list.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_connect_window.png"><img alt="../../_images/iio_osc_connect_window.png" src="../../_images/iio_osc_connect_window.png" style="width: 300px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_connect_window.png"><img alt="../../_images/iio_osc_connect_window.png" src="../../_images/iio_osc_connect_window.png" style="width: 300px;" />
+</a>
 </div></blockquote>
 <p>Click ‘Connect’ and it should by default open the data ‘Capture’ window. You can
 drag aside or close this window to see the main ‘Debug and DMM’ tab window.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_tabs.png"><img alt="../../_images/iio_osc_tabs.png" src="../../_images/iio_osc_tabs.png" style="width: 500px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_tabs.png"><img alt="../../_images/iio_osc_tabs.png" src="../../_images/iio_osc_tabs.png" style="width: 500px;" />
+</a>
 </div></blockquote>
 </section>
 <section id="configure-access-device-attributes-parameters">
-<h2>Configure/Access Device Attributes (Parameters)<a class="headerlink" href="#configure-access-device-attributes-parameters" title="Link to this heading">#</a></h2>
+<h2>Configure/Access Device Attributes (Parameters)<a class="headerlink" href="#configure-access-device-attributes-parameters" title="Link to this heading">¶</a></h2>
 <p>The IIO Oscilloscope allows user to access and configure different device parameters,
 called as ‘Attributes“. There are 2 types of attributes:</p>
 <ul class="simple">
@@ -217,9 +220,9 @@ called as ‘Attributes“. There are 2 types of attributes:</p>
 </section>
 </section>
 <section id="using-iio-oscilloscope-for-adcs">
-<h1>Using IIO Oscilloscope for ADCs<a class="headerlink" href="#using-iio-oscilloscope-for-adcs" title="Link to this heading">#</a></h1>
+<h1>Using IIO Oscilloscope for ADCs<a class="headerlink" href="#using-iio-oscilloscope-for-adcs" title="Link to this heading">¶</a></h1>
 <section id="using-dmm-tab-to-read-dc-voltage-on-input-channels">
-<h2>Using DMM Tab to Read DC Voltage on Input Channels<a class="headerlink" href="#using-dmm-tab-to-read-dc-voltage-on-input-channels" title="Link to this heading">#</a></h2>
+<h2>Using DMM Tab to Read DC Voltage on Input Channels<a class="headerlink" href="#using-dmm-tab-to-read-dc-voltage-on-input-channels" title="Link to this heading">¶</a></h2>
 <p>DMM tab can be used read the instantaneous voltage applied on analog input channels.
 Simply select the device and channels to read and press start button.</p>
 <div class="admonition note">
@@ -230,12 +233,13 @@ capture or Debug tab as this could impact data capturing. All uses same
 communication bus to access the data which could result into access/busy conflicts
 during data capture.</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/iio_osc_dmm_tab.png"><img alt="../../_images/iio_osc_dmm_tab.png" src="../../_images/iio_osc_dmm_tab.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_dmm_tab.png"><img alt="../../_images/iio_osc_dmm_tab.png" src="../../_images/iio_osc_dmm_tab.png" style="width: 500px;" />
+</a>
 </section>
 <section id="iio-data-capture-for-adcs">
-<h2>IIO Data Capture for ADCs<a class="headerlink" href="#iio-data-capture-for-adcs" title="Link to this heading">#</a></h2>
+<h2>IIO Data Capture for ADCs<a class="headerlink" href="#iio-data-capture-for-adcs" title="Link to this heading">¶</a></h2>
 <section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
+<h3>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h3>
 <p>This page focuses on the IIO firmware part of ‘Data Capturing. The “AD7606 IIO Application”
 is used as a reference for this discussion.</p>
 <p>IIO clients can be used to capture and visualize the continuous analog or
@@ -249,18 +253,21 @@ also allows users to save the data, which can further be used to process and ana
 is an 8-channel DAS. A 1Khz signal is applied on inputs of all 8 analog channels.
 The max data capturing rate in firmware is ~30 to 40 KSPS. The data is transmitted
 from firmware application using Virtual Serial or UART serial link.</p>
-<a class="reference internal image-reference" href="../../_images/iio_osc_sine_wave_capture.png"><img alt="../../_images/iio_osc_sine_wave_capture.png" src="../../_images/iio_osc_sine_wave_capture.png" style="width: 800px;" /></a>
-<a class="reference internal image-reference" href="../../_images/iio_osc_trapezoidal_wave_capture.png"><img alt="../../_images/iio_osc_trapezoidal_wave_capture.png" src="../../_images/iio_osc_trapezoidal_wave_capture.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_sine_wave_capture.png"><img alt="../../_images/iio_osc_sine_wave_capture.png" src="../../_images/iio_osc_sine_wave_capture.png" style="width: 800px;" />
+</a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_trapezoidal_wave_capture.png"><img alt="../../_images/iio_osc_trapezoidal_wave_capture.png" src="../../_images/iio_osc_trapezoidal_wave_capture.png" style="width: 800px;" />
+</a>
 <p>The channels for which data is to be captured can be selected from the GUI window,
 along with the number of samples to display on screen in a single data read query.
 As shown below, all 8 channels are selected for data capture and the number of
 requested samples is set at 400 (default). This means, IIO oscilloscope requests
 400 samples per channel, so in this case total 3200 samples. The channels are
 stored as shown below:</p>
-<a class="reference internal image-reference" href="../../_images/iio_osc_select_chn_samples.png"><img alt="../../_images/iio_osc_select_chn_samples.png" src="../../_images/iio_osc_select_chn_samples.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_select_chn_samples.png"><img alt="../../_images/iio_osc_select_chn_samples.png" src="../../_images/iio_osc_select_chn_samples.png" style="width: 800px;" />
+</a>
 </section>
 <section id="data-capture-from-iio-device">
-<h3>Data Capture from IIO Device<a class="headerlink" href="#data-capture-from-iio-device" title="Link to this heading">#</a></h3>
+<h3>Data Capture from IIO Device<a class="headerlink" href="#data-capture-from-iio-device" title="Link to this heading">¶</a></h3>
 <p>To capture the data from IIO device, simply select the device and channels
 to read/capture data. The data is plotted as “ADC Raw Value” Vs “Number of Samples”
 and is just used for Visualization. The data is read as is from device without
@@ -274,11 +281,13 @@ could result into access/busy conflicts during data capture.</p>
 </div>
 <p><em>Time Domain plot:</em></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_time_domain_plot.png"><img alt="../../_images/iio_osc_time_domain_plot.png" src="../../_images/iio_osc_time_domain_plot.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_time_domain_plot.png"><img alt="../../_images/iio_osc_time_domain_plot.png" src="../../_images/iio_osc_time_domain_plot.png" style="width: 800px;" />
+</a>
 </div></blockquote>
 <p><em>Frequency Domain plot:</em></p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_freq_domain_plot.png"><img alt="../../_images/iio_osc_freq_domain_plot.png" src="../../_images/iio_osc_freq_domain_plot.png" style="width: 800px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_freq_domain_plot.png"><img alt="../../_images/iio_osc_freq_domain_plot.png" src="../../_images/iio_osc_freq_domain_plot.png" style="width: 800px;" />
+</a>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -289,20 +298,21 @@ from IIO device.</p>
 </div>
 </section>
 <section id="saving-captured-data">
-<h3>Saving Captured Data<a class="headerlink" href="#saving-captured-data" title="Link to this heading">#</a></h3>
+<h3>Saving Captured Data<a class="headerlink" href="#saving-captured-data" title="Link to this heading">¶</a></h3>
 <p>The data on IIO oscilloscope can be saved for further processing and analysis. The
 data is saved using a .csv format. The data can be captured for each selected
 channel during save option and only requested number of samples can be saved. So
 if 400 samples are requested, the data for only 400 samples would get saved into
 .csv file. The data is raw adc data and no extra processing is performed it while
 saving or capturing.</p>
-<a class="reference internal image-reference" href="../../_images/iio_osc_data_save.png"><img alt="../../_images/iio_osc_data_save.png" src="../../_images/iio_osc_data_save.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_data_save.png"><img alt="../../_images/iio_osc_data_save.png" src="../../_images/iio_osc_data_save.png" style="width: 600px;" />
+</a>
 <p>The data saving feature is also available with other IIO client applications such as
 python and ACE.</p>
 </section>
 </section>
 <section id="limitations-of-data-capture-using-iio-application">
-<h2>Limitations of Data Capture Using IIO Application<a class="headerlink" href="#limitations-of-data-capture-using-iio-application" title="Link to this heading">#</a></h2>
+<h2>Limitations of Data Capture Using IIO Application<a class="headerlink" href="#limitations-of-data-capture-using-iio-application" title="Link to this heading">¶</a></h2>
 <p>There are 3 major factors which can potentially impact the data capturing:</p>
 <ul class="simple">
 <li><p>Sampling/Capturing Rate of ADC</p></li>
@@ -332,7 +342,8 @@ signals with frequencies of 4Khz and less when no oversampling is present. At OS
 the data rate drops down and so higher frequency signals can’t be reproduced correctly.
 Below plot is captured with 17Khz analog input on channel 1 and it can be seen that
 the signal is not a pure sine wave.</p>
-<a class="reference internal image-reference" href="../../_images/iio_osc_high_frequency_graph.png"><img alt="../../_images/iio_osc_high_frequency_graph.png" src="../../_images/iio_osc_high_frequency_graph.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_osc_high_frequency_graph.png"><img alt="../../_images/iio_osc_high_frequency_graph.png" src="../../_images/iio_osc_high_frequency_graph.png" style="width: 800px;" />
+</a>
 <p><strong>Data Transmission Rate (serial link) of MCU:</strong></p>
 <p>This is the rate or speed at which data can be transmitted to IIO client
 over the serial link (e.g. UART or Virtual serial). The data transmission link
@@ -377,15 +388,16 @@ Mbed firmware (app_config.h file), the data buffer size can be increased to 16Mb
 </div>
 <p>IIO firmware maintains the circular data buffer with dedicated read and write indices.
 Below diagram illustrates the use of circular buffer in the firmware.</p>
-<a class="reference internal image-reference" href="../../_images/iio_data_capture_in_firmware.png"><img alt="../../_images/iio_data_capture_in_firmware.png" src="../../_images/iio_data_capture_in_firmware.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/iio_data_capture_in_firmware.png"><img alt="../../_images/iio_data_capture_in_firmware.png" src="../../_images/iio_data_capture_in_firmware.png" style="width: 600px;" />
+</a>
 </section>
 </section>
 <section id="using-iio-oscilloscope-for-dacs">
-<h1>Using IIO Oscilloscope for DACs<a class="headerlink" href="#using-iio-oscilloscope-for-dacs" title="Link to this heading">#</a></h1>
+<h1>Using IIO Oscilloscope for DACs<a class="headerlink" href="#using-iio-oscilloscope-for-dacs" title="Link to this heading">¶</a></h1>
 <section id="iio-data-streaming-for-dacs">
-<h2>IIO Data Streaming for DACs<a class="headerlink" href="#iio-data-streaming-for-dacs" title="Link to this heading">#</a></h2>
+<h2>IIO Data Streaming for DACs<a class="headerlink" href="#iio-data-streaming-for-dacs" title="Link to this heading">¶</a></h2>
 <section id="id1">
-<h3>Introduction<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h3>Introduction<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>IIO clients can be used to load and stream data to DAC devices using an IIO
 firmware application developed for that device. Using this firmware, a user
 can configure various settings on the device and load the data using the DAC
@@ -402,7 +414,7 @@ enabled, the buffer repeats itself, and the same data is streamed over and over
 indefinitely until stopped.</p>
 </section>
 <section id="data-streaming-to-iio-device">
-<h3>Data Streaming to IIO Device<a class="headerlink" href="#data-streaming-to-iio-device" title="Link to this heading">#</a></h3>
+<h3>Data Streaming to IIO Device<a class="headerlink" href="#data-streaming-to-iio-device" title="Link to this heading">¶</a></h3>
 <p>The DAC Data Manager tab on the IIO Oscilloscope allows streaming data to supported iio devices.
 The input data file can be a binary file (.bin) or a MAT file (.mat).</p>
 <div class="admonition note">
@@ -412,7 +424,7 @@ the IIO Oscilloscope application must be upgraded to the most recent versions.</
 </div>
 </section>
 <section id="creating-binary-files-for-data-streaming">
-<h3>Creating binary files for data streaming<a class="headerlink" href="#creating-binary-files-for-data-streaming" title="Link to this heading">#</a></h3>
+<h3>Creating binary files for data streaming<a class="headerlink" href="#creating-binary-files-for-data-streaming" title="Link to this heading">¶</a></h3>
 <p><a class="reference internal" href="../python/python.html"><span class="doc">pyadi-iio: Python interfaces</span></a>
 The PyADI module allows users to create binary data files from the input data using the
 tx class. The CLI (Command Line Interface) script adistream.py allows the user to
@@ -420,16 +432,18 @@ create various types of waveforms like sine, triangular, pwm, etc and store them
 binary file.</p>
 </section>
 <section id="loading-and-streaming-the-data">
-<h3>Loading and Streaming the Data<a class="headerlink" href="#loading-and-streaming-the-data" title="Link to this heading">#</a></h3>
+<h3>Loading and Streaming the Data<a class="headerlink" href="#loading-and-streaming-the-data" title="Link to this heading">¶</a></h3>
 <p>On the IIO Oscilloscope, open the DAC Data Manager tab as indicated below
 after connecting to the iio device.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_data_manager.jpg"><img alt="../../_images/iio_osc_data_manager.jpg" src="../../_images/iio_osc_data_manager.jpg" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_data_manager.jpg"><img alt="../../_images/iio_osc_data_manager.jpg" src="../../_images/iio_osc_data_manager.jpg" style="width: 600px;" />
+</a>
 </div></blockquote>
 <p>Click on the File Selection section to input the wavefrom data binary file created.
 Copy the binary file path and paste it in the Location section, then click Open.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_file_section.jpg"><img alt="../../_images/iio_osc_file_section.jpg" src="../../_images/iio_osc_file_section.jpg" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_file_section.jpg"><img alt="../../_images/iio_osc_file_section.jpg" src="../../_images/iio_osc_file_section.jpg" style="width: 600px;" />
+</a>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -440,7 +454,8 @@ enabled, and otherwise may result in incorrrect data being streamed.</p>
 or disable cyclic streaming of data. Click the Load button to load the data. The
 message “Waveform loaded successfully” shows up if the data is loaded correctly.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../../_images/iio_osc_load_data.jpg"><img alt="../../_images/iio_osc_load_data.jpg" src="../../_images/iio_osc_load_data.jpg" style="width: 600px;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/iio_osc_load_data.jpg"><img alt="../../_images/iio_osc_load_data.jpg" src="../../_images/iio_osc_load_data.jpg" style="width: 600px;" />
+</a>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -454,7 +469,7 @@ button needs to be clicked to end the data streaming.</p>
 </section>
 </section>
 <section id="limitations-of-data-streaming-using-iio-application">
-<h2>Limitations of Data Streaming Using IIO Application<a class="headerlink" href="#limitations-of-data-streaming-using-iio-application" title="Link to this heading">#</a></h2>
+<h2>Limitations of Data Streaming Using IIO Application<a class="headerlink" href="#limitations-of-data-streaming-using-iio-application" title="Link to this heading">¶</a></h2>
 <p><strong>DAC Sampling/Update Rate:</strong></p>
 <p>The sampling rate or update rate defines the maximum rate/speed at which data can
 be loaded and updated onto the DAC output using the IIO firmware application. For
